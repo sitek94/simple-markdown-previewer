@@ -46,17 +46,17 @@ export default function App() {
     <div className="App" style={singleWindowMode ? singleWindowStyle : null}>
       {showEditor && (
         <Editor
-          isMaximized={showEditor}
+          isMaximized={singleWindowMode}
           inputText={inputText}
           onChange={handleChange}
-          onIconClick={singleWindowMode ? minimizeEditor : maximizeEditor}
+          onResizeIconClick={singleWindowMode ? minimizeEditor : maximizeEditor}
         />
       )}
       {showPreviewer && (
         <Previewer
-          isMaximized={showPreviewer}
+          isMaximized={singleWindowMode}
           originalText={inputText}
-          onIconClick={singleWindowMode ? minimizePreviewer : maximizePreviewer}
+          onResizeIconClick={singleWindowMode ? minimizePreviewer : maximizePreviewer}
         />
       )}
     </div>
