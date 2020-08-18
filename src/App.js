@@ -63,7 +63,6 @@ export default function App() {
   );
 }
 
-
 const placeholder = 
 `# Welcome to my React Markdown Previewer!
 
@@ -108,6 +107,4 @@ And here. | Okay. | I think we get it.
 1. But the list goes on...
 - Even if you use dashes or asterisks.
 * And last but not least, let's not forget embedded images:
-
-
 `
