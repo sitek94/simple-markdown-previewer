@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-import Previewer from './Previewer';
-import Editor from './Editor';
+import Previewer from '../components/Previewer';
+import Editor from '../components/Editor';
 
 export default function App() {
   // Single window mode
