@@ -1,25 +1,26 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-function Panel({ label, isMaximized, onIconClick, children, className }) {
+import { FaReact } from 'react-icons/fa';
+import { MdFullscreen, MdFullscreenExit } from 'react-icons/md';
+
+function Toolbar({ isMaximized, label, onResizeIconClick }) {
   return (
-    <div className={`Panel ${className}`} >
-      <div className="toolbar">
-        <div className="label">
-          {label}
-        </div>
-        <button onClick={onIconClick}>{isMaximized ? "minimize" : "maximize"}</button>
-      </div>
+    <div className="Toolbar">
+      <FaReact className="logo" />
+      <div className="label"> {label}</div>
+      <button className="button" onClick={onResizeIconClick}>
+        {isMaximized ? <MdFullscreenExit /> : <MdFullscreen />}
+      </button>
+    </div>
+  );
+}
+
+export default function Panel({ children, ...props }) {
+  return (
+    <div className="Panel">
+      <Toolbar {...props} />
       {children}
     </div>
   );
 }
 
-Panel.propTypes = {
-  isMaximized: PropTypes.bool.isRequired,
-  onIconClick: PropTypes.func.isRequired,
-  label: PropTypes.string,
-  children: PropTypes.node,
-};
-
-export default Panel;
