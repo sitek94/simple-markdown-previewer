@@ -1,9 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import './markdown-style.scss';
+import marked from 'marked';
 
 import Panel from './Panel';
-import marked from 'marked';
 
 marked.setOptions({
   breaks: true,
@@ -22,8 +20,4 @@ export default function Previewer({ originalText, ...props }) {
       <div id="preview" className="markdown" dangerouslySetInnerHTML={createMarkup()} />
     </Panel>
   );
-}
-
-Previewer.propTypes = {
-  originalText: PropTypes.string.isRequired
 }
