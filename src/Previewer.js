@@ -19,7 +19,7 @@ export default function Previewer({ originalText, ...props }) {
   }
   return (
     <Panel {...props} label="Previewer" className="Previewer">
-      <div className="markdown" dangerouslySetInnerHTML={createMarkup()} />
+      <div id="preview" className="markdown" dangerouslySetInnerHTML={createMarkup()} />
     </Panel>
   );
 }

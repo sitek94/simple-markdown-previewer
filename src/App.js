@@ -64,47 +64,55 @@ export default function App() {
 }
 
 const placeholder = 
-`# Welcome to my React Markdown Previewer!
+`
+# Markdown Previewer
 
-## This is a sub-heading...
-### And here's some other cool stuff:
-  
-Heres some code, \`<div></div>\`, between 2 backticks.
+Hi, I'm [Maciek](https://github.com/sitek94), welcome to my Markdown Previewer! 
+
+The project was built for learning purposes as a part of **Front End Libraries Certification** by [freeCodeCamp](https://www.freecodecamp.org/).
+
+You can find the challenge by clicking [here](https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-markdown-previewer).
+
+![freeCodeCamp](https://repository-images.githubusercontent.com/28457823/af1ed900-bddc-11e9-8162-a91c54bb11a1)
+
+## Marked - Markdown Parser
+[Marked] lets you convert [Markdown] into HTML.  Markdown is a simple text format whose goal is to be very easy to read and write, even when not converted to HTML.  This demo page will let you type anything you like and see how it gets converted.  Live.  No more waiting around.
+
+How To Use It?
+-------------------
+
+1. Type in stuff on the left.
+2. See the live updates on the right.
+
+That's it.  Pretty simple.
+
+Why Markdown?
+-------------
+
+It's easy.  It's not overly bloated, unlike HTML.  Also, as the creator of [markdown] says,
+
+> The overriding design goal for Markdown's
+> formatting syntax is to make it as readable
+> as possible. The idea is that a
+> Markdown-formatted document should be
+> publishable as-is, as plain text, without
+> looking like it's been marked up with tags
+> or formatting instructions.
+
+Ready to start writing? Then start changing stuff, have fun!
+
+[Marked]: https://github.com/markedjs/marked/
+[Markdown]: http://daringfireball.net/projects/markdown/
 
 \`\`\`
 // this is multi-line code:
 
-function anotherExample(firstLine, lastLine) {
-  if (firstLine == '\`\`\`' && lastLine == '\`\`\`') {
-    return multiLineCode;
+function passTests(code) {
+  if (code.includes(multiLineCode)) {
+    return true;
+  } else {
+    return false;
   }
 }
 \`\`\`
-  
-You can also make text **bold**... whoa!
-Or _italic_.
-Or... wait for it... **_both!_**
-And feel free to go crazy ~~crossing stuff out~~.
-
-There's also [links](https://www.freecodecamp.com), and
-> Block Quotes!
-
-And if you want to get really crazy, even tables:
-
-Wild Header | Crazy Header | Another Header?
------------- | ------------- | ------------- 
-Your content can | be here, and it | can be here....
-And here. | Okay. | I think we get it.
-
-- And of course there are lists.
-  - Some are bulleted.
-     - With different indentation levels.
-        - That look like this.
-
-
-1. And there are numbererd lists too.
-1. Use just 1s if you want! 
-1. But the list goes on...
-- Even if you use dashes or asterisks.
-* And last but not least, let's not forget embedded images:
 `
