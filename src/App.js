@@ -76,7 +76,7 @@ You can find the challenge by clicking [here](https://www.freecodecamp.org/learn
 ![freeCodeCamp](https://repository-images.githubusercontent.com/28457823/af1ed900-bddc-11e9-8162-a91c54bb11a1)
 
 ## Marked - Markdown Parser
-[Marked] lets you convert [Markdown] into HTML.  Markdown is a simple text format whose goal is to be very easy to read and write, even when not converted to HTML.  This demo page will let you type anything you like and see how it gets converted.  Live.  No more waiting around.
+[Marked] lets you convert [Markdown] into \`HTML\`.  Markdown is a simple text format whose goal is to be very easy to read and write, even when not converted to HTML.  This demo page will let you type anything you like and see how it gets converted.  Live.  No more waiting around.
 
 How To Use It?
 -------------------
