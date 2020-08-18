@@ -4,41 +4,42 @@ import Previewer from './Previewer';
 import Editor from './Editor';
 
 export default function App() {
+  // Single window mode
   const [singleWindowMode, setSingleWindowMode] = useState(false);
 
-
-
-  const [showEditor, setShowEditor] = useState(true);
-  const [showPreviewer, setShowPreviewer] = useState(true);
-
+  // When changing to single window mode, I apply inline style
+  // to change display to 1x1 grid
   const singleWindowStyle = {
     gridTemplateRows: '1fr',
     gridTemplateColumns: '1fr',
   };
 
+  // Editor
+  const [showEditor, setShowEditor] = useState(true);
   const maximizeEditor = () => {
     setShowPreviewer(false);
     setSingleWindowMode(true);
   };
-
-  const maximizePreviewer = () => {
-    setShowEditor(false);
-    setSingleWindowMode(true);
-  };
-
   const minimizeEditor = () => {
     setShowPreviewer(true);
     setSingleWindowMode(false);
   };
-
-  const minimizePreviewer = () => {
-    setShowEditor(true);
-    setSingleWindowMode(false);
-  };
-
+  
+  // Handle textarea input from Editor component
   const [inputText, setInputText] = useState('');
   const handleChange = (e) => {
     setInputText(e.target.value);
+  };
+
+  // Previewer
+  const [showPreviewer, setShowPreviewer] = useState(true);
+  const maximizePreviewer = () => {
+    setShowEditor(false);
+    setSingleWindowMode(true);
+  };
+  const minimizePreviewer = () => {
+    setShowEditor(true);
+    setSingleWindowMode(false);
   };
 
   return (
@@ -54,7 +55,7 @@ export default function App() {
       {showPreviewer && (
         <Previewer
           isMaximized={showPreviewer}
-          text={inputText}
+          originalText={inputText}
           onIconClick={singleWindowMode ? minimizePreviewer : maximizePreviewer}
         />
       )}

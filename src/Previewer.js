@@ -8,9 +8,9 @@ marked.setOptions({
   gfm: true,
 });
 
-export default function Previewer({ text, ...props }) {
+export default function Previewer({ originalText, ...props }) {
   function createMarkup() {
-    return { __html: marked(text) };
+    return { __html: marked(originalText) };
   }
   return (
     <Panel {...props} label="Previewer" className="Previewer">
