@@ -83,6 +83,10 @@ body {
 
   // Prevent text from overlapping when too much text
   overflow: hidden;
+
+  @media (min-width: 900px) {
+    grid-template-rows: 32px 1fr;
+  }
 }
 
 // Toolbar displayed at the top of Panel component
@@ -100,6 +104,10 @@ body {
     margin: 0 var(--spacing-1);
     color: var(--blue);
     font-size: 32px;
+
+    @media (min-width: 900px) {
+      font-size: 30px;
+    }
   }
 
   .label {
@@ -108,6 +116,10 @@ body {
 
     // Nice trick to align it to the left
     margin-right: auto;
+
+    @media (min-width: 900px) {
+      font-size: 20px;
+    }
   }
 
   .button {
@@ -124,6 +136,10 @@ body {
 
     & > svg {
         font-size: 32px;
+
+        @media (min-width: 900px) {
+          font-size: 24px;
+        }
     }
   }
 }
