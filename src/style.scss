@@ -127,6 +127,7 @@ body {
     outline: none;
     transition: all .3s;
     border: 1px solid transparent;
+    cursor: pointer;
 
     &:hover {
       color: var(--white);
