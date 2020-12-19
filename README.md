@@ -2,7 +2,7 @@
 
 See the project live: https://sitek94.github.io/simple-markdown-previewer
 
-This is a simple react app which contain a textarea for Markdown input and a preview tab where the converted text appears.
+Markdown Previewer contains a textarea for markdown input and a preview tab where the converted text appears.
 
 The project was built for learning purposes as a part of **Front End Libraries Certification** by [freeCodeCamp](https://www.freecodecamp.org/).
 
