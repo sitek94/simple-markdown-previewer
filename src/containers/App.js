@@ -73,7 +73,7 @@ The project was built for learning purposes as a part of **Front End Libraries C
 
 You can find the challenge by clicking [here](https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-markdown-previewer).
 
-![freeCodeCamp](https://repository-images.githubusercontent.com/28457823/af1ed900-bddc-11e9-8162-a91c54bb11a1)
+![freeCodeCamp](https://raw.githubusercontent.com/sitek94/pomodoro-clock/master/free-code-camp.png)
 
 ## Marked - Markdown Parser
 [Marked] lets you convert [Markdown] into \`HTML\`.  Markdown is a simple text format whose goal is to be very easy to read and write, even when not converted to HTML.  This demo page will let you type anything you like and see how it gets converted.  Live.  No more waiting around.
